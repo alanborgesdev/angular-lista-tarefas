@@ -1,0 +1,38 @@
+<div class="container-principal">
+  <h1>Lista de Tarefas</h1>
+
+  <div class="formulario-de-tarefa">
+    <input
+      type="text"
+      placeholder="O que você precisa fazer?"
+      [(ngModel)]="textoDaNovaTarefa"
+      (keyup.enter)="adicionarTarefa()"
+    />
+
+    <button (click)="adicionarTarefa()">Adicionar</button>
+  </div>
+
+  <div class="lista-de-tarefas">
+    <div
+      *ngFor="let tarefa of listaDeTarefas"
+      class="item-da-tarefa"
+      [class.concluida]="tarefa.done"
+    >
+      <div class="titulo-da-tarefa">
+        <input
+          type="checkbox"
+          [checked]="tarefa.done"
+          (click)="alternarStatusDaTarefa(tarefa)"
+        />
+
+        <span>{{ tarefa.title }}</span>
+      </div>
+
+      <button class="botao-remover" (click)="removerTarefa(tarefa)">×</button>
+    </div>
+
+    <p *ngIf="listaDeTarefas.length === 0" class="mensagem-lista-vazia">
+      Nenhuma tarefa pendente.
+    </p>
+  </div>
+</div>
