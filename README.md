@@ -1,59 +1,73 @@
-# TodoApp
+# Lista de Tarefas com Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Development server
+## 🚀 Descrição
 
-To start a local development server, run:
+Projeto simples de lista de tarefas (To-Do List) desenvolvido com Angular, com o objetivo de praticar conceitos básicos.
 
-```bash
-ng serve
-```
+> **Acesse a aplicação em produção:** [**angular-lista-tarefas.vercel.app**](https://angular-lista-tarefas-alan.vercel.app/)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📌 Tecnologias e Conceitos Aplicados
 
-## Code scaffolding
+- **Angular:** Framework principal para a construção da SPA.
+- **TypeScript:** Linguagem para garantir a tipagem e a integridade dos dados.
+- **HTML5 & CSS3:** Para estruturação e estilização da interface.
+- **Arquitetura de Componentes:** Criação de componentes reutilizáveis (`Button`, `Input`).
+- **Serviços:** Para isolar e gerenciar a lógica de negócio das tarefas.
+- **Testes Unitários:** Implementação de testes com Karma e Jasmine para garantir a qualidade do código.
+- **Git & GitHub:** Para versionamento de código, seguindo práticas de **GitFlow**.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📂 Estrutura do Projeto
 
-```bash
-ng generate component component-name
-```
+A estrutura foi organizada para promover a escalabilidade e a manutenibilidade do código.
+Use code with caution.
+Markdown
+angular-lista-tarefas/
+│
+├── src/
+│ ├── app/
+│ │ ├── components/ (Componentes reutilizáveis da UI)
+│ │ ├── models/ (Interfaces e tipos do TypeScript)
+│ │ ├── services/ (Lógica de negócio isolada)
+│ │ └── ...
+│ ├── assets/
+│ └── ...
+│
+├── README.md
+└── ...
+Generated code
+## 🛠 Como Rodar o Projeto
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1.  **Clone o repositório:**
+    ```sh
+    git clone https://github.com/alanborgesdev/angular-lista-tarefas.git
+    ```
+2.  **Acesse a pasta do projeto:**
+    ```sh
+    cd angular-lista-tarefas
+    ```
+3.  **Instale as dependências:**
+    ```sh
+    npm install
+    ```
+4.  **Execute a aplicação:**
+    ```sh
+    ng serve
+    ```
+5.  Abra o arquivo `http://localhost:4200/` em um navegador.
 
-```bash
-ng generate --help
-```
+## 📸 Screenshots
 
-## Building
+![Preview do Projeto](https://raw.githubusercontent.com/alanborgesdev/angular-lista-tarefas/main/src/assets/screenshot.png)
+*(Lembre-se de substituir este link se o nome ou local do seu screenshot for diferente!)*
 
-To build the project run:
+## 👨‍💻 Autor
 
-```bash
-ng build
-```
+Projeto desenvolvido por **[Alan Borges](https://www.linkedin.com/in/alanborgesdev/)**.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📝 Licença
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+O código-fonte deste projeto está sob a licença MIT.
